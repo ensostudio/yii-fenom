@@ -1,0 +1,36 @@
+{
+    "name": "ensostudio/yii2-extension",
+    "description": "Package template for Yii2 extension",
+    "keywords": ["yii2", "extension", "ensostudio"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Enso studio",
+            "email": "info@ensostudio.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "yiisoft/yii2": "^2.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "EnsoStudio\\Yii2Extension\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EnsoStudio\\Yii2Extension\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
