@@ -1,7 +1,13 @@
 {
-    "name": "ensostudio/yii2-extension",
-    "description": "Package template for Yii2 extension",
-    "keywords": ["yii2", "extension", "ensostudio"],
+    "name": "ensostudio/yii2-fenom",
+    "description": "Yii 2 extension for using Fenom template engine",
+    "keywords": [
+        "yii2",
+        "yii",
+        "extension",
+        "fenom",
+        "template"
+    ],
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [
@@ -11,20 +17,21 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "yiisoft/yii2": "^2.0"
+        "php": ">=7.1.0",
+        "yiisoft/yii2": "^2.0.30",
+        "fenom/fenom": "^2.12.1"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest"
+        "phpunit/phpunit": "^8.5.26"
     },
     "autoload": {
         "psr-4": {
-            "EnsoStudio\\Yii2Extension\\": "src/"
+            "ensostudio\\yii2fenom\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EnsoStudio\\Yii2Extension\\": "tests/"
+            "ensostudio\\yii2fenom\\": "tests/"
         }
     },
     "repositories": [
@@ -32,5 +39,10 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
 }

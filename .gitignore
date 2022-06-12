@@ -1,5 +1,5 @@
-/.idea
-/nbproject
-/vendor
-/*.lock
-/*.cache
+/.idea/
+/nbproject/
+/vendor/
+*.lock
+*.cache
